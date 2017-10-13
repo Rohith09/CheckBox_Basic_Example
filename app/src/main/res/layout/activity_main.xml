@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chandrassekhar.checkbox.MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gen"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+/>
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/text"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rd_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"/>
+    </RadioGroup>
+
+<Button
+    android:id="@+id/rb_ok"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/SUBMIT"
+    android:layout_alignParentBottom="true"
+    android:layout_centerInParent="true"   />
+
+</RelativeLayout>
